@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# TIC TAC TOE
+## Online game on React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Header](https://github.com/DavidShariev/tic_tac_toe/blob/main/src/img/prev.png?raw=true)](https://github.com/DavidShariev/)
 
-## Available Scripts
+## About project
+Online tic tac toe with rooms. 
 
-In the project directory, you can run:
+## Installation
+During installation, you need to start the server with the npm run server command, and then the server client with the npm run start command. 
+Next, on the web page that opens, you need to enter the user-name and room-name. The opponent can be added to the room by room-name.
 
-### `npm start`
+## Languages and Tools
+![React](https://img.shields.io/badge/-React-000?style=for-the-badge&logo=React)
+![Socket](https://img.shields.io/badge/-Socket.io-000?style=for-the-badge&logo=Socket.io)
+![Socket](https://img.shields.io/badge/-MUI-000?style=for-the-badge&logo=mui)
+![JavaScript](https://img.shields.io/badge/-JavaScript-000?style=for-the-badge&logo=Javascript)
+![Git](https://img.shields.io/badge/-Git-000?style=for-the-badge&logo=GiT)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Follow Me
+[![gmail](https://img.shields.io/badge/-gmail-000?style=for-the-badge&logo=gmail)](https://mail.google.com/mail/david.shariev.08@gmail.com)
+[![vkontakte](https://img.shields.io/badge/-vk.com-000?style=for-the-badge&logo=vk)](https://vk.com/veirash02)
+[![telegram](https://img.shields.io/badge/-telegram-000?style=for-the-badge&logo=telegram)](https://t.me/artrubec)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
