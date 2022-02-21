@@ -28,6 +28,7 @@ const Field = () => {
 
     const onClickRestart = async () => {
         await socket.emit("ROOM:RESTART", { roomId: state.roomId});
+        clicked = [];
         dispatch(restart());
     }
 
@@ -41,6 +42,8 @@ const Field = () => {
             await dispatch(move(cellId, sym));
 
             clicked.push(+cellId)
+
+            console.log(clicked)
             winCollection.forEach(arr => {
                 if(clicked.indexOf(arr[0]) < 0)
                     return
@@ -64,6 +67,7 @@ const Field = () => {
     useEffect(() => {
         socket.on("ROOM:RESTART", ({ roomId }) => {
             console.log("restratign")
+            clicked = []
             dispatch(restart());
         })
         socket.on("ROOM:MOVE", ({ cellId, sym }) => {
