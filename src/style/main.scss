@@ -1,14 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
 }
 
 body{
-    background-color: #202020;
+    background-color: #121212;
+}
+
+button{
+    background: none;
+    border: none;
 }
 
 ul, li{
     list-style: none;
 }
 
+.field{
+    margin-right: auto;
+    margin-left: auto;
+    background: url("../img/field.svg") ;
+    background-size: cover;
+
+    .cell{
+        font-family: 'Indie Flower', cursive;
+    }
+}
+
+.game{
+    max-width: 400px;
+    margin-top: calc(50vh);
+    transform: translateY(-60%);
+    color: #fff;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+
+    &__title{
+    }
+
+    &__user{
+        max-width: 40%;
+        overflow: hidden;
+        position: relative;
+
+        
+        &--x{
+            text-align: left;
+            padding-right: 10px;
+            
+        }
+        &--y{
+            text-align: right;
+            padding-left: 10px;
+            
+        }
+    }
+
+    .repeact{
+        color: #fff;
+        font-size: 42px;
+        cursor: pointer;
+        margin-top: 80px;
+
+
+        &:hover{
+            font-weight: 600;
+        }
+    }
+}

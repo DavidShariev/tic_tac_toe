@@ -25,7 +25,7 @@ io.on('connection', (socket) => {
                 db[roomId].users.splice(id, 1);
                 
                 const users = db[roomId].users;
-                socket.to(roomId).emit("ROOM:USER_LOGIN", 
+                socket.to(roomId).emit("ROOM:DISCONNECT", 
                     { roomId, users, name: users[0] });
             }
         })
@@ -65,6 +65,10 @@ io.on('connection', (socket) => {
     socket.on("ROOM:RESTART", ({roomId}) => {
         console.log("restarting", roomId)
         socket.to(roomId).emit("ROOM:RESTART", {roomId});
+    })
+
+    socket.on("ROOM:WIN", ({roomId}) => {
+        socket.to(roomId).emit("ROOM:ENEMY_WIN")
     })
 });
 

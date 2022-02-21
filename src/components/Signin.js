@@ -1,9 +1,8 @@
 import { Box, Typography, TextField, Button }  from "@mui/material";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { set_users } from "../redux/actionCreators";
+import { disconnect, restart, set_users } from "../redux/actionCreators";
 import socket from "../socket";
-
 const SignIn = () => {
 
     let [userName, setUserName] = useState(" ");
@@ -42,7 +41,11 @@ const SignIn = () => {
                 setIsLoading(false);
                 return;
             }
-            dispatch(set_users(roomId, users, name))
+            dispatch(set_users(roomId, users, name));
+        })
+        socket.on("ROOM:DISCONNECT", ({ name, roomId, users, error}) => {
+            dispatch(disconnect(roomId, users, name));
+            dispatch(restart());
         })
     }, [])
 
