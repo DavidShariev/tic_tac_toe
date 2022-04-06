@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { userInfo } from "os";
+import { FC, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import Signin from "./components/Signin";
+import Field from "./components/Field";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { set_users } from "./redux/actionCreators";
+
+import { IinitialState } from "./redux/reducer";
+
+const App: FC = () => {
+    const data = useSelector<IinitialState, IinitialState>(state => state);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        
+    }, []);
+    console.log(data);
+
+    return(<div className="App">
+        { data.users.length > 0 ? <Field></Field> : <Signin></Signin>}
+    </div>)
 }
 
 export default App;
